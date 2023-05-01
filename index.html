@@ -9,6 +9,13 @@
       content="Швидкі та якісні архітектурні візуалізації та робочі креслення"
     />
     <title>WizArD</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Modern-normalize-->
     <link
       rel="stylesheet"
@@ -19,60 +26,81 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav>
-        <a lang="pl" href="./index.html">WIZARD</a>
-        <ul>
-          <li><a href="./index.html">Головна</a></li>
-          <li><a href="https">Візуалізація</a></li>
-          <li><a href="https">Анімація і панорама</a></li>
-          <li><a href="https">Дизайн</a></li>
-          <li><a href="https">Графічні роботи</a></li>
+    <header class="header">
+      <nav class="nav">
+        <a class="link" lang="pl" href="./index.html">WIZARD</a>
+        <ul class="nav__list list">
+          <li class="nav__item">
+            <a class="nav__link link" href="./index.html">Головна</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link link" href="./index.html">Візуалізація</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link link" href="./index.html"
+              >Анімація і панорама</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link link" href="./index.html">Дизайн</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link link" href="./index.html">Графічні роботи</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a
-            href="https://www.instagram.com/_wizard_group/?igshid=YmMyMTA2M2Y%3D"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="instagram"
-            >instagram</a
-          >
-        </li>
+      <div class="socials">
+        <p class="socials-alert">Слідкуйте за нами</p>
+        <ul class="socials-list list">
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://www.instagram.com/_wizard_group/?igshid=YmMyMTA2M2Y%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram"
+              >instagram</a
+            >
+          </li>
 
-        <li>
-          <a
-            href="https://www.facebook.com/ivandyka"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="facebook"
-            >facebook</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.behance.net/ivanhoematsiuk"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="behance"
-            >behance</a
-          >
-        </li>
-      </ul>
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://www.facebook.com/ivandyka"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="facebook"
+              >facebook</a
+            >
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://www.behance.net/ivanhoematsiuk"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="behance"
+              >behance</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- Main -->
     <main>
       <!-- Hero -->
-      <section>
-        <h1>Творимо магію в кожному проєкті</h1>
+      <section class="section">
+        <h1 class="hero-title">
+          Творимо магію <br />
+          <span class="hero-title-part">в кожному проєкті</span>
+        </h1>
         <button type="button">Зв’язатися з нами</button>
       </section>
       <!-- Section About -->
-      <section>
-        <h2>Про нас</h2>
-        <h3>Ми перетворимо ідею в результат</h3>
-        <ul>
+      <section class="section">
+        <h2 class="title">Про нас</h2>
+        <h3 class="subtitle">Ми перетворимо ідею в результат</h3>
+        <ul class="list">
           <p>
             Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
@@ -84,8 +112,8 @@
             aptent taciti sociosqu ad litora torquent per
           </p>
         </ul>
-        <h3>Наші послуги</h3>
-        <ul>
+        <h3 class="subtitle">Наші послуги</h3>
+        <ul class="list">
           <li>Візуалізація</li>
           <li>Анімація і панорама</li>
           <li>Дизайн</li>
@@ -93,9 +121,9 @@
         </ul>
       </section>
       <!-- Section Portfolio -->
-      <section>
-        <h2>Останні роботи</h2>
-        <ul>
+      <section class="section">
+        <h2 class="title">Останні роботи</h2>
+        <ul class="list">
           <li>
             <p>Назва проєкту</p>
             <img
@@ -135,124 +163,143 @@
         </ul>
       </section>
       <!-- Section Visualisation -->
-      <section>
-        <h2>Візуалізація</h2>
-        <ul>
+      <section class="section">
+        <h2 class="title">Візуалізація</h2>
+        <ul class="list">
           <li>
-            <h3>Внутрішнє середовище</h3>
-            <button>Переглянути проєкти</button>
+            <div>
+              <h3 class="subtitle">Внутрішнє середовище</h3>
+              <button type="button">Переглянути проєкти</button>
+            </div>
+            <img
+              src="./images/visualisatio/visualisatio-1.jpg"
+              alt="візуалізація інтер’єру"
+              width="1219px"
+              height="667px"
+            />
           </li>
           <li>
-            <h3>Зовнішнє середовище</h3>
-            <button>Переглянути проєкти</button>
+            <div>
+              <h3 class="subtitle">Зовнішнє середовище</h3>
+              <button type="button">Переглянути проєкти</button>
+            </div>
+            <img
+              src="./images/visualisatio/visualisatio-2.jpg"
+              alt="візуалізація екстер’єру"
+              width="1219px"
+              height="667px"
+            />
           </li>
         </ul>
       </section>
       <!-- Section Animation -->
-      <section>
-        <h2>Анімація</h2>
-        <ul>
+      <section class="section section--lighter">
+        <h2 class="title">Анімація</h2>
+        <ul class="list">
           <li>
-            <h3>Відео</h3>
+            <h3 class="subtitle">Відео</h3>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per
             </p>
-            <button>Дивитися всі</button>
+            <button type="button">Дивитися всі</button>
           </li>
           <li>
-            <h3>Панорама</h3>
+            <h3 class="subtitle">Панорама</h3>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per
             </p>
-            <button>Дивитися всі</button>
+            <button type="button">Дивитися всі</button>
           </li>
         </ul>
       </section>
       <!-- Section Design-->
-      <section>
-        <h2>Дизайн</h2>
-        <ul>
+      <section class="section">
+        <h2 class="title">Дизайн</h2>
+        <ul class="list">
           <li>
-            <h3>Екстер’єр</h3>
+            <h3 class="subtitle">Екстер’єр</h3>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per orem ipsum dolor sit
               amet, consectetur adipiscing elit.
             </p>
-            <button>Усі проєкти</button>
+            <button type="button">Усі проєкти</button>
           </li>
           <li>
-            <h3>Інтер’єр</h3>
+            <h3 class="subtitle">Інтер’єр</h3>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per orem ipsum dolor sit
               amet, consectetur adipiscing elit.
             </p>
-            <button>Усі проєкти</button>
+            <button type="button">Усі проєкти</button>
           </li>
         </ul>
       </section>
+      n type="button"
       <!-- Section Graphic Works-->
-      <section>
-        <h2>Графічні роботи</h2>
-        <ul>
+      <section class="section section--lighter">
+        <h2 class="title">Графічні роботи</h2>
+        <ul class="list">
           <li>
-            <h3>Ландшафтний дизайн</h3>
+            <h3 class="subtitle">Ландшафтний дизайн</h3>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per orem ipsum dolor sit
               amet, consectetur adipiscing elit.
             </p>
-            <button>Усі проєкти</button>
+            <button type="button">Усі проєкти</button>
           </li>
           <li>
-            <h3>Графічні роботи</h3>
+            <h3 class="subtitle">Графічні роботи</h3>
             <p>
               Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per orem ipsum dolor sit
               amet, consectetur adipiscing elit.
             </p>
-            <button>Усі проєкти</button>
+            <button type="button">Усі проєкти</button>
           </li>
         </ul>
       </section>
       <!-- Section Contacts-->
-      <section>
+      <section class="section">
         <strong>Зв’яжіться з нами</strong>
         <p>Залишіть свої контактні дані, щоб ми з вами зв’язатися</p>
-        <button>Надіслати</button>
+        <button type="button">Надіслати</button>
       </section>
     </main>
     <!-- Footer -->
-    <footer>
-      <a lang="pl" href="./index.html">WIZARD</a>
+    <footer class="section--lighter">
+      <a class="link" lang="pl" href="./index.html">WIZARD</a>
       <p>&#169; 2023 WizArD. All Rights Reserved</p>
-      <ul>
-        <li><a href="./index.html">Головна</a></li>
-        <li><a href="https">Візуалізація</a></li>
-        <li><a href="https">Анімація і панорама</a></li>
-        <li><a href="https">Дизайн</a></li>
+      <ul class="list">
+        <li><a class="link" href="./index.html">Головна</a></li>
+        <li><a class="link" href="https">Візуалізація</a></li>
+        <li><a class="link" href="https">Анімація і панорама</a></li>
+        <li><a class="link" href="https">Дизайн</a></li>
       </ul>
       <address>
-        <ul>
+        <ul class="list">
           <li>
-            <a href="mailto:wizard-group@gmail.com">wizard-group@gmail.com</a>
+            <a class="link" href="mailto:wizard-group@gmail.com"
+              >wizard-group@gmail.com</a
+            >
           </li>
           <li>
-            <a href="tel:+48793163822">+48 793 163 822</a>
+            <a class="link" href="tel:+48793163822">+48 793 163 822</a>
           </li>
         </ul>
       </address>
 
-      <ul>
+      <ul class="list">
         <li>
           <a
             href="https://www.instagram.com/_wizard_group/?igshid=YmMyMTA2M2Y%3D"
