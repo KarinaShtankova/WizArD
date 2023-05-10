@@ -28,7 +28,7 @@
     <!-- Header -->
     <header class="header container">
       <div class="header-container container">
-        <div class="logo-header">
+        <div class="header-logo">
           <a class="logo link" href="./index.html" aria-label="wizard logo">
             <div class="logo-container">
               <div class="logo-box-one">
@@ -185,7 +185,7 @@
       </section>
       <!-- Section Portfolio -->
       <section class="portfolio">
-        <div class="portfolio-container">
+        <div class="section-container portfolio-container">
           <h2 class="title">Останні роботи</h2>
           <ul class="portfolio-list list">
             <li class="portfolio-item">
@@ -253,17 +253,26 @@
       </section>
       <!-- Section Visualisation -->
       <section class="visualisation section">
-        <div class="container">
+        <div class="section-container visualisation-container">
           <h2 class="title">Візуалізація</h2>
           <ul class="visualisation-list list">
             <li class="visualisation-item">
-              <div class="visualisation-box">
+              <div class="visualisation-box visualisation-box--left-side">
                 <h3 class="subtitle">Внутрішнє середовище</h3>
-                <button class="section-btn" type="button">
+                <button
+                  class="section-btn section-btn--left-margin"
+                  type="button"
+                >
                   Переглянути проєкти
+                  <svg class="section-btn-icon" width="32" height="18">
+                    <use
+                      href="./images/icons.svg.svg#icon-arrow-right-thin"
+                    ></use>
+                  </svg>
                 </button>
               </div>
               <img
+                class="visualisation-img visualisation-img--left-margin"
                 src="./images/visualisatio/visualisatio-1.jpg"
                 alt="візуалізація інтер’єру"
                 width="1219"
@@ -278,6 +287,7 @@
                 </button>
               </div>
               <img
+                class="visualisation-img"
                 src="./images/visualisatio/visualisatio-2.jpg"
                 alt="візуалізація екстер’єру"
                 width="1219"
@@ -289,7 +299,7 @@
       </section>
       <!-- Section Animation -->
       <section class="section section--lighter">
-        <div class="container">
+        <div class="section-container">
           <h2 class="title">Анімація</h2>
           <ul class="list">
             <li>
@@ -300,6 +310,17 @@
                 Class aptent taciti sociosqu ad litora torquent per
               </p>
               <button type="button">Дивитися всі</button>
+              <div>
+                <video
+                  src="./videos/video-1.mp4"
+                  width="1219"
+                  height="734"
+                  controls
+                  autoplay
+                  loop
+                  muted
+                ></video>
+              </div>
             </li>
             <li>
               <h3 class="subtitle">Панорама</h3>
@@ -309,6 +330,7 @@
                 Class aptent taciti sociosqu ad litora torquent per
               </p>
               <button type="button">Дивитися всі</button>
+              <div class="panorama-container"></div>
             </li>
           </ul>
         </div>
@@ -383,8 +405,46 @@
     <footer class="footer section--lighter">
       <div class="footer-container container">
         <div>
-          <a class="link" lang="pl" href="./index.html">WIZARD</a>
-          <p>&#169; 2023 WizArD. All Rights Reserved</p>
+          <div class="footer-logo">
+            <a class="logo link" href="./index.html" aria-label="wizard logo">
+              <div class="logo-container">
+                <div class="logo-box-one">
+                  <svg class="logo-item" width="20" height="16.83">
+                    <use href="./images/icons.svg.svg#icon-w"></use>
+                  </svg>
+                  <svg class="logo-item" width="20" height="16.83">
+                    <use href="./images/icons.svg.svg#icon-i"></use>
+                  </svg>
+                  <svg class="logo-item" width="20" height="16.83">
+                    <use href="./images/icons.svg.svg#icon-z"></use>
+                  </svg>
+                </div>
+                <div class="logo-box-two">
+                  <svg class="logo-item" width="20" height="16.83">
+                    <use href="./images/icons.svg.svg#icon-a"></use>
+                  </svg>
+                  <svg class="logo-item" width="20" height="16.83">
+                    <use href="./images/icons.svg.svg#icon-r"></use>
+                  </svg>
+                </div>
+                <div class="logo-box-three">
+                  <svg class="logo-item" width="20" height="16.83">
+                    <use href="./images/icons.svg.svg#icon-d"></use>
+                  </svg>
+                  <svg
+                    class="logo-item logo-item-accent"
+                    width="20"
+                    height="16.83"
+                  >
+                    <use href="./images/icons.svg.svg#icon-rectangle"></use>
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+          <p class="footer__copyright">
+            &#169; 2023 WizArD. All Rights Reserved
+          </p>
         </div>
         <ul class="footer-nav list">
           <li>
@@ -400,24 +460,67 @@
           </li>
         </ul>
         <div class="footer-contacts">
-          <address>
-            <ul class="list">
-              <li>
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
                 <a
-                  class="footer-address link"
+                  class="address__link link"
                   href="mailto:wizard-group@gmail.com"
                   >wizard-group@gmail.com</a
                 >
               </li>
-              <li>
-                <a class="footer-address link" href="tel:+48793163822"
+              <li class="address__item">
+                <a class="address__link link" href="tel:+48793163822"
                   >+48 793 163 822</a
                 >
               </li>
             </ul>
           </address>
-
-          <ul class="list">
+          <div class="footer-socials">
+            <ul class="socials-list list">
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://www.behance.net/ivanhoematsiuk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="behance"
+                >
+                  <svg class="socials-link-icon" width="32" height="32">
+                    <use href="./images/icons.svg.svg#icon-behance"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://www.facebook.com/ivandyka"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook"
+                >
+                  <svg class="socials-link-icon" width="32" height="32">
+                    <use href="./images/icons.svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://www.instagram.com/_wizard_group/?igshid=YmMyMTA2M2Y%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="instagram"
+                >
+                  <svg class="socials-link-icon" width="32" height="32">
+                    <use
+                      href="./images/icons.svg.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- <ul class="list">
             <li>
               <a
                 href="https://www.instagram.com/_wizard_group/?igshid=YmMyMTA2M2Y%3D"
@@ -446,9 +549,12 @@
                 >behance</a
               >
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+    <script src="./js/panolens.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
