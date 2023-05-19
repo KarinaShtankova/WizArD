@@ -8,7 +8,7 @@
       name="description"
       content="Швидкі та якісні архітектурні візуалізації та робочі креслення"
     />
-    <title>WizArD</title>
+    <title>Головна - WizArD</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,47 +26,66 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header container">
-      <div class="header-container container">
-        <div class="header-logo">
-          <a class="logo link" href="./index.html" aria-label="wizard logo">
-            <div class="logo-container">
-              <div class="logo-box-one">
-                <svg class="logo-item" width="20" height="16.83">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo logo logo--gradient-bckg">
+          <a
+            class="logo__link link"
+            href="./index.html"
+            aria-label="wizard logo"
+          >
+            <div class="logo__container">
+              <div class="logo__box-wiz">
+                <svg class="logo__item" width="21" height="21">
                   <use href="./images/icons.svg.svg#icon-w"></use>
                 </svg>
-                <svg class="logo-item" width="20" height="16.83">
+                <svg class="logo__item" width="21" height="21">
                   <use href="./images/icons.svg.svg#icon-i"></use>
                 </svg>
-                <svg class="logo-item" width="20" height="16.83">
+                <svg class="logo__item" width="21" height="21">
                   <use href="./images/icons.svg.svg#icon-z"></use>
                 </svg>
               </div>
-              <div class="logo-box-two">
-                <svg class="logo-item" width="20" height="16.83">
+              <div class="logo__box-ar">
+                <svg class="logo__item" width="21" height="21">
                   <use href="./images/icons.svg.svg#icon-a"></use>
                 </svg>
-                <svg class="logo-item" width="20" height="16.83">
+                <svg class="logo__item" width="21" height="21">
                   <use href="./images/icons.svg.svg#icon-r"></use>
                 </svg>
               </div>
-              <div class="logo-box-three">
-                <svg class="logo-item" width="20" height="16.83">
+              <div class="logo__box-d">
+                <svg class="logo__item logo__item-d" width="21" height="21">
                   <use href="./images/icons.svg.svg#icon-d"></use>
                 </svg>
-                <svg
-                  class="logo-item logo-item-accent"
+                <div class="logo__item-accent"></div>
+                <!-- <svg
+                  class="logo__item logo__item--accent"
                   width="20"
                   height="16.83"
                 >
                   <use href="./images/icons.svg.svg#icon-rectangle"></use>
-                </svg>
+                </svg> -->
               </div>
             </div>
           </a>
+          <div class="logo__text-container">
+            <p class="logo__text">
+              <span class="visually-hidden">wiz</span
+              >u<br />a<br />l<br />i<br />z<br />a<br />c<br />j<br />a
+            </p>
+            <p class="logo__text">
+              <span class="visually-hidden">ar</span
+              >c<br />h<br />i<br />t<br />e<br />k<br />t<br />u<br />r<br />a
+            </p>
+            <p class="logo__text">
+              <span class="visually-hidden">d</span
+              >e<br />s<br />i<br />g<br />n
+            </p>
+          </div>
         </div>
 
-        <nav class="nav">
+        <nav class="header__nav nav">
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link nav__link-current link" href="./index.html"
@@ -89,54 +108,67 @@
             </li>
           </ul>
         </nav>
-        <div class="socials">
-          <svg class="socials-icon" width="24" height="24">
+        <div class="header-right-side">
+          <svg class="search-icon" width="24" height="24">
             <use href="./images/icons.svg.svg#icon-glass-thin"></use>
           </svg>
-          <div class="socials-wrapper">
-            <ul class="socials-list list">
-              <li class="socials-item">
+          <div class="header-right-side__socials socials">
+            <ul class="socials__list list">
+              <li class="socials__item">
                 <a
-                  class="socials-link"
+                  class="socials__link"
                   href="https://www.behance.net/ivanhoematsiuk"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="behance"
                 >
-                  <svg class="socials-link-icon" width="24" height="24">
+                  <svg
+                    class="socials__icon socials__icon--rotate"
+                    width="24"
+                    height="24"
+                  >
                     <use href="./images/icons.svg.svg#icon-behance"></use>
                   </svg>
                 </a>
               </li>
-              <li class="socials-item">
+              <li class="socials__item">
                 <a
-                  class="socials-link"
+                  class="socials__link"
                   href="https://www.facebook.com/ivandyka"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="facebook"
                 >
-                  <svg class="socials-link-icon" width="24" height="24">
+                  <svg
+                    class="socials__icon socials__icon--rotate"
+                    width="24"
+                    height="24"
+                  >
                     <use href="./images/icons.svg.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="socials-item">
+              <li class="socials__item">
                 <a
-                  class="socials-link"
+                  class="socials__link"
                   href="https://www.instagram.com/_wizard_group/?igshid=YmMyMTA2M2Y%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="instagram"
                 >
-                  <svg class="socials-link-icon" width="24" height="24">
+                  <svg
+                    class="socials__icon socials__icon--rotate"
+                    width="24"
+                    height="24"
+                  >
                     <use
                       href="./images/icons.svg.svg#icon-instagram"
                     ></use></svg
                 ></a>
               </li>
             </ul>
-            <p class="socials-alert">Слідкуйте за нами</p>
+            <p class="socials__alert">Слідкуйте за нами</p>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -145,16 +177,16 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="hero-container">
-          <h1 class="hero-title">
+        <div class="container">
+          <h1 class="hero__title">
             Творимо магію <br />
-            <span class="hero-title-part">в кожному проєкті</span>
+            <span class="hero__title-part">в кожному проєкті</span>
           </h1>
           <button class="hero-btn" type="button">Зв’язатися з нами</button>
         </div>
       </section>
       <!-- Section About -->
-      <section class="section">
+      <section class="about section">
         <div class="container">
           <h2 class="title">Про нас</h2>
           <p>Ми перетворимо ідею в результат</p>
@@ -185,109 +217,116 @@
       </section>
       <!-- Section Portfolio -->
       <section class="portfolio">
-        <div class="section-container portfolio-container">
+        <div class="container container--larger portfolio-container">
           <h2 class="title">Останні роботи</h2>
-          <ul class="portfolio-list list">
-            <li class="portfolio-item">
-              <p class="portfolio-name">Назва проєкту</p>
+          <ul class="portfolio__list list">
+            <li class="portfolio__item">
+              <p class="portfolio__name">Назва проєкту</p>
               <img
                 src="./images/portfolio/portfolio-1.jpg"
                 alt="Однородинний житловий будинок"
                 width="480"
                 height="843"
               />
-              <button class="portfolio-btn-open" type="button">
-                <svg class="portfolio-btn-open-icon" width="40" height="40">
+              <button class="btn-glass" type="button">
+                <svg class="btn-glass__icon" width="40" height="40">
                   <use href="./images/icons.svg.svg#icon-glass-plus"></use>
                 </svg>
               </button>
-              <div class="portfolio-overlay"></div>
+              <div class="portfolio__overlay"></div>
             </li>
-            <li class="portfolio-item">
-              <p class="portfolio-name">Назва проєкту</p>
+            <li class="portfolio__item">
+              <p class="portfolio__name">Назва проєкту</p>
               <img
                 src="./images/portfolio/portfolio-2.jpg"
                 alt="Однородинний житловий будинок"
                 width="480"
                 height="843"
               />
-              <button class="portfolio-btn-open" type="button">
-                <svg class="portfolio-btn-open-icon" width="40" height="40">
+              <button class="btn-glass" type="button">
+                <svg class="btn-glass__icon" width="40" height="40">
                   <use href="./images/icons.svg.svg#icon-glass-plus"></use>
                 </svg>
               </button>
-              <div class="portfolio-overlay"></div>
+              <div class="portfolio__overlay"></div>
             </li>
-            <li class="portfolio-item">
-              <p class="portfolio-name">Назва проєкту</p>
+            <li class="portfolio__item">
+              <p class="portfolio__name">Назва проєкту</p>
               <img
                 src="./images/portfolio/portfolio-3.jpg"
                 alt="Однородинний житловий будинок"
                 width="480"
                 height="843"
               />
-              <button class="portfolio-btn-open" type="button">
-                <svg class="portfolio-btn-open-icon" width="40" height="40">
+              <button class="btn-glass" type="button">
+                <svg class="btn-glass__icon" width="40" height="40">
                   <use href="./images/icons.svg.svg#icon-glass-plus"></use>
                 </svg>
               </button>
-              <div class="portfolio-overlay"></div>
+              <div class="portfolio__overlay"></div>
             </li>
-            <li class="portfolio-item">
-              <p class="portfolio-name">Назва проєкту</p>
+            <li class="portfolio__item">
+              <p class="portfolio__name">Назва проєкту</p>
               <img
                 src="./images/portfolio/portfolio-4.jpg"
                 alt="Однородинний житловий будинок"
                 width="480"
                 height="843"
               />
-              <button class="portfolio-btn-open" type="button">
-                <svg class="portfolio-btn-open-icon" width="40" height="40">
+              <button class="btn-glass" type="button">
+                <svg class="btn-glass__icon" width="40" height="40">
                   <use href="./images/icons.svg.svg#icon-glass-plus"></use>
                 </svg>
               </button>
-              <div class="portfolio-overlay"></div>
+              <div class="portfolio__overlay"></div>
             </li>
           </ul>
         </div>
       </section>
       <!-- Section Visualisation -->
-      <section class="visualisation section">
-        <div class="section-container visualisation-container">
+      <section class="section">
+        <div class="container">
           <h2 class="title">Візуалізація</h2>
-          <ul class="visualisation-list list">
-            <li class="visualisation-item">
-              <div class="visualisation-box visualisation-box--left-side">
-                <h3 class="subtitle">Внутрішнє середовище</h3>
+          <ul class="list">
+            <li class="section__item">
+              <div class="section__box section__box--left-side">
+                <h3 class="subtitle subtitle--right-align">
+                  Внутрішнє середовище
+                </h3>
                 <button
                   class="section-btn section-btn--left-margin"
                   type="button"
                 >
-                  Переглянути проєкти
-                  <svg class="section-btn-icon" width="32" height="18">
-                    <use
-                      href="./images/icons.svg.svg#icon-arrow-right-thin"
-                    ></use>
-                  </svg>
+                  <div class="section-btn__box">
+                    <div class="section-btn__text">Переглянути проєкти</div>
+                    <svg class="section-btn__icon" width="32" height="18">
+                      <use href="./images/icons.svg.svg#icon-arrow"></use>
+                    </svg>
+                  </div>
                 </button>
               </div>
               <img
-                class="visualisation-img visualisation-img--left-margin"
+                class="section__img section__img--left-margin"
                 src="./images/visualisatio/visualisatio-1.jpg"
                 alt="візуалізація інтер’єру"
                 width="1219"
                 height="667"
               />
             </li>
-            <li class="visualisation-item">
-              <div class="visualisation-box">
+            <li class="section__item">
+              <div class="section__box">
                 <h3 class="subtitle">Зовнішнє середовище</h3>
                 <button class="section-btn" type="button">
-                  Переглянути проєкти
+                  <div class="section-btn__box">
+                    <div class="section-btn__text">Переглянути проєкти</div>
+                    <svg class="section-btn__icon" width="32" height="18">
+                      <use href="./images/icons.svg.svg#icon-arrow"></use>
+                    </svg>
+                  </div>
                 </button>
               </div>
               <img
-                class="visualisation-img"
+                class="section__img"
                 src="./images/visualisatio/visualisatio-2.jpg"
                 alt="візуалізація екстер’єру"
                 width="1219"
@@ -299,19 +338,29 @@
       </section>
       <!-- Section Animation -->
       <section class="section section--lighter">
-        <div class="section-container">
+        <div class="container">
           <h2 class="title">Анімація</h2>
           <ul class="list">
-            <li>
-              <h3 class="subtitle">Відео</h3>
-              <p>
-                Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per
-              </p>
-              <button type="button">Дивитися всі</button>
+            <li class="section__item">
+              <div
+                class="section__box section__box--lighter section__box--left-side"
+              >
+                <h3 class="subtitle">Відео</h3>
+                <!-- <p>
+                  Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per
+                </p> -->
+                <button
+                  class="section-btn section-btn--left-margin"
+                  type="button"
+                >
+                  Дивитися всі
+                </button>
+              </div>
               <div>
                 <video
+                  class="section__img section__img--left-margin"
                   src="./videos/video-1.mp4"
                   width="1219"
                   height="734"
@@ -322,15 +371,17 @@
                 ></video>
               </div>
             </li>
-            <li>
-              <h3 class="subtitle">Панорама</h3>
-              <p>
-                Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per
-              </p>
-              <button type="button">Дивитися всі</button>
-              <div class="panorama-container"></div>
+            <li class="section__item">
+              <div class="section__box section__box--lighter">
+                <h3 class="subtitle">Панорама</h3>
+                <!-- <p>
+                  Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per
+                </p> -->
+                <button class="section-btn" type="button">Дивитися всі</button>
+              </div>
+              <div class="section__img panorama-container"></div>
             </li>
           </ul>
         </div>
@@ -338,56 +389,97 @@
       <!-- Section Design-->
       <section class="section">
         <div class="container">
-          <h2 class="title">Дизайн</h2>
+          <h2 class="title">Візуалізація</h2>
           <ul class="list">
-            <li>
-              <h3 class="subtitle">Екстер’єр</h3>
-              <p>
-                Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per orem ipsum
-                dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <button type="button">Усі проєкти</button>
+            <li class="section__item">
+              <div class="section__box section__box--left-side">
+                <h3 class="subtitle subtitle--right-align">
+                  Дизайн інтер’єрів
+                </h3>
+                <!-- <p>
+                  Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per orem ipsum
+                  dolor sit amet, consectetur adipiscing elit.
+                </p> -->
+                <button class="section-btn" type="button">Усі проєкти</button>
+              </div>
+              <img
+                class="section__img section__img--left-margin"
+                src="./images/visualisatio/visualisatio-1.jpg"
+                alt="візуалізація інтер’єру"
+                width="1219"
+                height="667"
+              />
             </li>
-            <li>
-              <h3 class="subtitle">Інтер’єр</h3>
-              <p>
+            <li class="section__item">
+              <div class="section__box">
+                <h3 class="subtitle">Дизайн екстер’єрів</h3>
+                <!-- <p>
                 Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
                 Class aptent taciti sociosqu ad litora torquent per orem ipsum
                 dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <button type="button">Усі проєкти</button>
+              </p> -->
+                <button class="section-btn" type="button">Усі проєкти</button>
+              </div>
+              <img
+                class="section__img"
+                src="./images/visualisatio/visualisatio-1.jpg"
+                alt="візуалізація інтер’єру"
+                width="1219"
+                height="667"
+              />
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Section Graphic Works-->
+
       <section class="section section--lighter">
         <div class="container">
-          <h2 class="title">Графічні роботи</h2>
+          <h2 class="title">Візуалізація</h2>
           <ul class="list">
-            <li>
-              <h3 class="subtitle">Ландшафтний дизайн</h3>
-              <p>
-                Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per orem ipsum
-                dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <button type="button">Усі проєкти</button>
+            <li class="section__item">
+              <div
+                class="section__box section__box--lighter section__box--left-side"
+              >
+                <h3 class="subtitle">Ландшафтний дизайн</h3>
+                <!-- <p>
+                  Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per orem ipsum
+                  dolor sit amet, consectetur adipiscing elit.
+                </p> -->
+                <button class="section-btn" type="button">Усі проєкти</button>
+              </div>
+              <img
+                class="section__img section__img--left-margin"
+                src="./images/visualisatio/visualisatio-1.jpg"
+                alt="візуалізація інтер’єру"
+                width="1219"
+                height="667"
+              />
             </li>
-            <li>
-              <h3 class="subtitle">Графічні роботи</h3>
-              <p>
-                Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
-                Class aptent taciti sociosqu ad litora torquent per orem ipsum
-                dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <button type="button">Усі проєкти</button>
+            <li class="section__item">
+              <div class="section__box section__box--lighter">
+                <h3 class="subtitle">Графічні роботи</h3>
+                <!-- <p>
+                  Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per orem ipsum
+                  dolor sit amet, consectetur adipiscing elit.
+                </p> -->
+                <button class="section-btn" type="button">Усі проєкти</button>
+              </div>
+              <img
+                class="section__img"
+                src="./images/visualisatio/visualisatio-1.jpg"
+                alt="візуалізація інтер’єру"
+                width="1219"
+                height="667"
+              />
             </li>
           </ul>
         </div>
@@ -407,32 +499,32 @@
         <div>
           <div class="footer-logo">
             <a class="logo link" href="./index.html" aria-label="wizard logo">
-              <div class="logo-container">
-                <div class="logo-box-one">
-                  <svg class="logo-item" width="20" height="16.83">
+              <div class="logo__container">
+                <div class="logo__box-wiz">
+                  <svg class="logo__item" width="21" height="21">
                     <use href="./images/icons.svg.svg#icon-w"></use>
                   </svg>
-                  <svg class="logo-item" width="20" height="16.83">
+                  <svg class="logo__item" width="21" height="21">
                     <use href="./images/icons.svg.svg#icon-i"></use>
                   </svg>
-                  <svg class="logo-item" width="20" height="16.83">
+                  <svg class="logo__item" width="21" height="21">
                     <use href="./images/icons.svg.svg#icon-z"></use>
                   </svg>
                 </div>
-                <div class="logo-box-two">
-                  <svg class="logo-item" width="20" height="16.83">
+                <div class="logo__box-ar">
+                  <svg class="logo__item" width="21" height="21">
                     <use href="./images/icons.svg.svg#icon-a"></use>
                   </svg>
-                  <svg class="logo-item" width="20" height="16.83">
+                  <svg class="logo__item" width="21" height="21">
                     <use href="./images/icons.svg.svg#icon-r"></use>
                   </svg>
                 </div>
-                <div class="logo-box-three">
-                  <svg class="logo-item" width="20" height="16.83">
+                <div class="logo__box-d">
+                  <svg class="logo__item" width="21" height="21">
                     <use href="./images/icons.svg.svg#icon-d"></use>
                   </svg>
                   <svg
-                    class="logo-item logo-item-accent"
+                    class="logo__item logo__item--accent"
                     width="20"
                     height="16.83"
                   >
@@ -476,50 +568,48 @@
               </li>
             </ul>
           </address>
-          <div class="footer-socials">
-            <ul class="socials-list list">
-              <li class="socials-item">
-                <a
-                  class="socials-link"
-                  href="https://www.behance.net/ivanhoematsiuk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="behance"
-                >
-                  <svg class="socials-link-icon" width="32" height="32">
-                    <use href="./images/icons.svg.svg#icon-behance"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-item">
-                <a
-                  class="socials-link"
-                  href="https://www.facebook.com/ivandyka"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="facebook"
-                >
-                  <svg class="socials-link-icon" width="32" height="32">
-                    <use href="./images/icons.svg.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials-item">
-                <a
-                  class="socials-link"
-                  href="https://www.instagram.com/_wizard_group/?igshid=YmMyMTA2M2Y%3D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="instagram"
-                >
-                  <svg class="socials-link-icon" width="32" height="32">
-                    <use
-                      href="./images/icons.svg.svg#icon-instagram"
-                    ></use></svg
-                ></a>
-              </li>
-            </ul>
-          </div>
+          <!-- <div class="footer-socials"> -->
+          <ul class="footer-socials socials__list list">
+            <li class="socials__item">
+              <a
+                class="socials__link"
+                href="https://www.instagram.com/_wizard_group/?igshid=YmMyMTA2M2Y%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="socials__icon" width="32" height="32">
+                  <use href="./images/icons.svg.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link"
+                href="https://www.facebook.com/ivandyka"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="socials__icon" width="32" height="32">
+                  <use href="./images/icons.svg.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link"
+                href="https://www.behance.net/ivanhoematsiuk"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="behance"
+              >
+                <svg class="socials__icon" width="32" height="32">
+                  <use href="./images/icons.svg.svg#icon-behance"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- </div> -->
           <!-- <ul class="list">
             <li>
               <a
