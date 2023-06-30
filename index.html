@@ -21,9 +21,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <!-- Siema -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/siema@1.5.1/dist/siema.min.css"
+    />
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header class="header">
@@ -280,19 +287,45 @@
               </button>
               <div class="portfolio__overlay"></div>
             </li>
+            <li class="portfolio__item">
+              <p class="portfolio__name">Назва проєкту</p>
+              <img
+                src="./images/portfolio/portfolio-1.jpg"
+                alt="Однородинний житловий будинок"
+                width="480"
+                height="843"
+              />
+              <button class="btn-glass" type="button">
+                <svg class="btn-glass__icon" width="40" height="40">
+                  <use href="./images/icons.svg.svg#icon-glass-plus"></use>
+                </svg>
+              </button>
+              <div class="portfolio__overlay"></div>
+            </li>
+            <li class="portfolio__item">
+              <p class="portfolio__name">Назва проєкту</p>
+              <img
+                src="./images/portfolio/portfolio-1.jpg"
+                alt="Однородинний житловий будинок"
+                width="480"
+                height="843"
+              />
+              <button class="btn-glass" type="button">
+                <svg class="btn-glass__icon" width="40" height="40">
+                  <use href="./images/icons.svg.svg#icon-glass-plus"></use>
+                </svg>
+              </button>
+              <div class="portfolio__overlay"></div>
+            </li>
           </ul>
-          <button class="btn-short-arrow" type="button">
-            <svg class="btn-short-arrow__icon" width="48" height="48">
-              <use href="./images/icons.svg.svg#icon-arrow-short"></use>
+          <button class="btn-short-arrow-right next" type="button">
+            <svg class="btn-short-arrow-right__icon" width="48" height="48">
+              <use href="./images/icons.svg.svg#icon-arrow-short-right"></use>
             </svg>
           </button>
-          <button class="btn-short-arrow btn-short-arrow--left" type="button">
-            <svg
-              class="btn-short-arrow__icon btn-short-arrow__icon--left"
-              width="48"
-              height="48"
-            >
-              <use href="./images/icons.svg.svg#icon-arrow-short"></use>
+          <button class="btn-short-arrow-left prev" type="button">
+            <svg class="btn-short-arrow-left__icon" width="48" height="48">
+              <use href="./images/icons.svg.svg#icon-arrow-short-left"></use>
             </svg>
           </button>
         </div>
@@ -351,7 +384,7 @@
         </div>
       </section>
       <!-- Section Animation -->
-      <section class="section section--lighter">
+      <section class="anim section section--lighter">
         <div class="container">
           <h2 class="title">Анімація</h2>
           <ul class="list">
@@ -369,7 +402,12 @@
                   class="section-btn section-btn--left-margin"
                   type="button"
                 >
-                  Дивитися всі
+                  <div class="section-btn__box">
+                    <div class="section-btn__text">Переглянути проєкти</div>
+                    <svg class="section-btn__icon" width="32" height="18">
+                      <use href="./images/icons.svg.svg#icon-arrow"></use>
+                    </svg>
+                  </div>
                 </button>
               </div>
               <div>
@@ -393,7 +431,14 @@
                   vulputate libero et velit interdum, ac aliquet odio mattis.
                   Class aptent taciti sociosqu ad litora torquent per
                 </p> -->
-                <button class="section-btn" type="button">Дивитися всі</button>
+                <button class="section-btn" type="button">
+                  <div class="section-btn__box">
+                    <div class="section-btn__text">Переглянути проєкти</div>
+                    <svg class="section-btn__icon" width="32" height="18">
+                      <use href="./images/icons.svg.svg#icon-arrow"></use>
+                    </svg>
+                  </div>
+                </button>
               </div>
               <div class="section__img panorama-container"></div>
             </li>
@@ -510,9 +555,13 @@
     <!-- Footer -->
     <footer class="footer section--lighter">
       <div class="footer-container container">
-        <div>
-          <div class="footer-logo">
-            <a class="logo link" href="./index.html" aria-label="wizard logo">
+        <div class="footer__left-side">
+          <div class="footer__logo logo">
+            <a
+              class="logo__link link"
+              href="./index.html"
+              aria-label="wizard logo"
+            >
               <div class="logo__container">
                 <div class="logo__box-wiz">
                   <svg class="logo__item" width="21" height="21">
@@ -534,16 +583,17 @@
                   </svg>
                 </div>
                 <div class="logo__box-d">
-                  <svg class="logo__item" width="21" height="21">
+                  <svg class="logo__item logo__item-d" width="21" height="21">
                     <use href="./images/icons.svg.svg#icon-d"></use>
                   </svg>
-                  <svg
-                    class="logo__item logo__item--accent"
-                    width="20"
-                    height="16.83"
-                  >
-                    <use href="./images/icons.svg.svg#icon-rectangle"></use>
-                  </svg>
+                  <div class="logo__item-accent"></div>
+                  <!-- <svg
+                  class="logo__item logo__item--accent"
+                  width="20"
+                  height="16.83"
+                >
+                  <use href="./images/icons.svg.svg#icon-rectangle"></use>
+                </svg> -->
                 </div>
               </div>
             </a>
@@ -583,7 +633,7 @@
             </ul>
           </address>
           <!-- <div class="footer-socials"> -->
-          <ul class="footer-socials socials__list list">
+          <ul class="footer-socials__list socials__list list">
             <li class="socials__item">
               <a
                 class="socials__link"
@@ -659,6 +709,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
     <script src="./js/panolens.min.js"></script>
+    <script src="https://unpkg.com/siema@1.5.1/dist/siema.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
