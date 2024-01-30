@@ -1,0 +1,50 @@
+/* Socials */
+.socials {
+
+
+  &__alert {
+    display: flex;
+    align-items: center;
+
+    font-weight: 300;
+    line-height: 1.19;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+
+    &::before {
+            display: block;
+            content: "";
+            height: 0.5px;
+            width: 355px;
+            margin-right: 23px;
+            margin-left: 23px;
+    
+            background-color: var(--primary-text-color);
+        }
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__link {
+    display: block;
+
+    color: var(--primary-text-color);
+    transition: var(--transition-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__icon--rotate {
+    transform: rotate(90deg);
+  }
+}

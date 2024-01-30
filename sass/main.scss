@@ -1,12 +1,32 @@
 // utils styles
 @import "./utils/vars";
+@import "./utils/visually-hidden";
 
 // base styles
 @import "./base/common";
+@import "./base/reset";
 
 // components styles
-@import "./components/button";
+@import "./components/container";
+@import "./components/section";
+@import "./components/logo";
+@import "./components/title";
+@import "./components/subtitle";
+@import "./components/search-icon";
+@import "./components/section-btn";
+@import "./components/socials";
+@import "./components/main-btn";
+@import "./components/btn-glass";
+@import "./components/btn-short-arrow";
+@import "./components/panorama-container";
+@import "./components/address";
 
 // layouts styles
 @import "./layouts/header";
-
+@import "./layouts/header-right-side";
+@import "./layouts/nav";
+@import "./layouts/hero";
+@import "./layouts/portfolio";
+@import "./layouts/visualisation";
+@import "./layouts/animation";
+@import "./layouts/footer";

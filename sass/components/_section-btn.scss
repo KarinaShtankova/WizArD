@@ -1,0 +1,39 @@
+/* Section button */
+
+.section-btn {
+    display: block;
+    padding: 16px 36px 16px 16px;
+
+    font-size: 18px;
+    /* line-height: 1.67; */
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.025em;
+
+    background-color: transparent;
+    color: var(--primary-text-color);
+    border: 2px solid var(--primary-text-color);
+    cursor: pointer;
+
+
+    &__box {
+            display: flex;
+            align-items: center;
+            transform: translatex(0px);
+            transition: transform var(--anim-main);
+        }
+    
+        &:hover .section-btn__box,
+        &:hover .section-btn__box {
+            transform: translatex(20px);
+        }
+    
+        &--left-margin {
+            margin-left: auto;
+        }
+    
+        &__icon {
+            margin-left: 20px;
+        }
+}
+

@@ -1,0 +1,42 @@
+/* button short arrow */
+
+.btn-short-arrow-right,
+.btn-short-arrow-left {
+    position: absolute;
+    top: 54%;
+
+    width: 88px;
+    height: 80px;
+
+    border: none;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    background: #19191c;
+}
+
+.btn-short-arrow-left {
+    left: 0%;
+    padding: 16px 8px 16px 32px;
+}
+
+.btn-short-arrow-right {
+    right: 0%;
+    padding: 16px 32px 16px 8px;
+}
+
+.btn-short-arrow-left__icon,
+.btn-short-arrow-right__icon {
+    fill: currentColor;
+    transform: translatex(0px);
+    transition: transform var(--anim-main);
+}
+
+.btn-short-arrow-left:hover .btn-short-arrow-left__icon,
+.btn-short-arrow-left:focus .btn-short-arrow-left__icon {
+    transform: translatex(-24px);
+}
+
+.btn-short-arrow-right:hover .btn-short-arrow-right__icon,
+.btn-short-arrow-right:focus .btn-short-arrow-right__icon {
+    transform: translatex(24px);
+}

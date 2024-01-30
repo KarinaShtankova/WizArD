@@ -1,0 +1,47 @@
+/* Footer */
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-bottom: 37px;
+    /* transform: scale(1.31);j */
+  }
+
+  &__copyright {
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  &-nav-link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.19;
+
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+
+    color: var(--primary-text-color);
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  /* .footer-contacts {
+      display: flex;
+    } */
+
+  &-socials__list {
+    gap: 32px;
+  }
+}

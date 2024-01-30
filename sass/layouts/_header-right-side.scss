@@ -1,0 +1,22 @@
+/* header right side*/
+
+.header-right-side {
+    position: relative;
+    padding: 75px 46px 824px 46px;
+    background-color: #141415cc;
+}
+
+.header-right-side__socials {
+    position: absolute;
+    bottom: 410px;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(-90deg);
+    display: flex;
+    align-items: center;
+    min-width: 683px;
+    font-weight: 300;
+    line-height: 1.19;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+}

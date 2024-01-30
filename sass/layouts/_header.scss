@@ -1,0 +1,24 @@
+/* Header */
+.header {
+  position: relative;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__container {
+    position: absolute;
+    /* position: fixed; */
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+
+  &__logo {
+    padding: 32px 0px 443px 0px;
+  }
+
+  &__nav {
+    padding-top: 66px;
+  }
+}

@@ -1,0 +1,18 @@
+/* Address */
+
+.address {
+  /* &__item {
+  margin-bottom: 40px;
+} */
+
+  &__link {
+    font-style: normal;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.055em;
+
+    color: var(--primary-text-color);
+  }
+}

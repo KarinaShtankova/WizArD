@@ -1,0 +1,37 @@
+/* button glass */
+
+.btn-glass {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 24px;
+  width: 88px;
+  height: 88px;
+
+  color: var(--primary-text-color);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(8.5px);
+  border-radius: 98px;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: var(--transition-color), opacity var(--anim-main);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  .portfolio__item:hover &,
+  .portfolio__item:focus & {
+    opacity: 1;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
